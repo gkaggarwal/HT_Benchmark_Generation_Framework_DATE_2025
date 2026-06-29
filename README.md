@@ -1,8 +1,9 @@
 # Compatibility-Graph-Assisted Automatic Hardware Trojan Insertion Framework
 
-A complete, runnable implementation of the DATE 2025 paper
-*"Compatibility Graph Assisted Automatic Hardware Trojan Insertion Framework"*
-(Kumar, Shaik, Riaz, Prasad, Ahlawat — IIT Jammu).
+### Reference
+
+G. Kumar, A. H. Shaik, A. Riaz, Y. Prasad, and S. Ahlawat, **"Compatibility Graph Assisted Automatic Hardware Trojan Insertion Framework,"** *Proceedings of the Design, Automation & Test in Europe Conference (DATE)*, 2025, pp. 1–7.
+
 
 Given a gate-level netlist and user parameters (number of trigger nodes `q`,
 number of HT instances `N`, rareness threshold), the framework produces
@@ -323,8 +324,22 @@ Added because they were missing or incompatible:
   trigger feedback; validation and MERO evaluation; pipeline + CLI.
 
 ---
+## 8. 📖 Citation
 
-## 8. Limitations / knobs
+If you use this framework, the generated Hardware Trojan benchmarks, datasets, or any part of the benchmark generation methodology in your research, please cite our DATE 2025 paper:
+
+```bibtex
+@INPROCEEDINGS{10992945,
+  author={Kumar, Gaurav and Shaik, Ashfaq Hussain and Riaz, Anjum and Prasad, Yamuna and Ahlawat, Satyadev},
+  booktitle={2025 Design, Automation & Test in Europe Conference (DATE)},
+  title={Compatibility Graph Assisted Automatic Hardware Trojan Insertion Framework},
+  year={2025},
+  pages={1-7},
+  doi={10.23919/DATE64628.2025.10992945}
+}
+```
+
+## 9. Limitations / knobs
 
 * Runtime is now dominated by per-rare-node test-vector generation (PODEM +
   cone-restricted relaxation); graph construction and clique generation are
